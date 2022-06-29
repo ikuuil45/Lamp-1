@@ -1,0 +1,47 @@
+/**
+ * @license Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see https://ckeditor.com/legal/ckeditor-oss-license
+ */
+
+CKEDITOR.editorConfig = function( config ) {
+	config.language = "zh-cn";
+	config.defaultLanguage = "zh-cn";
+	config.disableObjectResizing = true;	
+	config.font_names = 'Arial/Arial;Courier/Courier;Times/Times;Microsoft YaHei/Microsoft YaHei;STHeiti/STHeiti;宋体/宋体;楷体/楷体';
+	config.fontSize_sizes = "12/12px;16/16px;20/20px;24/24px;26/26px";
+	config.tabSpaces = 4;
+	config.resize_enabled = false;
+	var km = 'kM' + Math.random();
+	config.mentions = [ {
+		feed: function( options, callback ) {
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function() {
+				if ( xhr.readyState == 4 ) {
+					if ( xhr.status == 200 ) {
+						callback( JSON.parse( this.responseText ) );
+					} else {
+						callback( [] );
+					}
+				}
+			}
+			xhr.open( 'GET', '/misc.php?mod=getatuser&inajax=1&return=json&name='+encodeURIComponent(options.query));
+			xhr.send();
+		},
+		itemTemplate: '<li data-id="{id}">{name}</li>',
+		outputTemplate: '<span class="mentions">{name} </span>&nbsp;',
+		minChars: 1,
+		caseSensitive : false,
+		itemsLimit : 20
+	} ];
+	config.format_tags = 'h1;h2;h3';
+	config.extraPlugins= 'hkemoji,autocomplete,textmatch,ajax,textwatcher,xml,mentions,eqneditor';
+	config.uploadUrl= '/misc.php?mod=swfnewupload&operation=upload&simple=1&type=image&from=cut';
+	config.filebrowserUploadMethod = 'form';
+	config.removeDialogTabs= 'image:advanced;link:advanced;image:Upload;info:advanced;image:Link;table:advanced;tableProperties:advanced';
+	config.toolbar_Basic = [
+		['TextColor','Bold','Italic','Underline','Strike','RemoveFormat','-'], 
+		['NumberedList','BulletedList','Outdent','Indent','JustifyLeft','JustifyCenter','JustifyRight','-'],
+		['Link','Unlink','Table','HorizontalRule','HKemoji','EqnEditor','-'],
+	];
+	config.toolbar = 'Basic';
+};

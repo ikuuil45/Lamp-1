@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    
+    tools:ignore="RtlSymmetry" >
+
+    <TextView
+        android:id="@+id/textColorDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入颜色名称" />
+
+    <EditText
+        android:id="@+id/editColorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textColorDiff"
+        android:layout_toLeftOf="@+id/btnSearch"
+        android:ems="10"
+        android:hint="紫或紫色（例）"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textColorDiff"
+        android:text="搜索" />
+
+    <View
+        android:id="@+id/viewPickedColor"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/editColorName"
+        android:background="@color/aqua" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewPickedColor" >
+
+        <TableLayout
+            android:id="@+id/resultTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dip"
+            android:shrinkColumns="0"
+            android:stretchColumns="0" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dip" >
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dip"
+                    android:background="@color/burlywood" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dip"
+                    android:gravity="center"
+                    android:text="紫色（例）"
+                    android:textSize="20sp" />
+
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

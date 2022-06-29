@@ -1,0 +1,37 @@
+function front_go(){
+	location.reload();
+}
+window.addEventListener('message',function(event){
+	var data = event.data;
+	if(data.hasOwnProperty('from')){
+		location.reload();
+	}
+});
+
+if(typeof(jQuery) != "undefined")
+{
+	(function($){
+		$(function(){
+			function closeLogin() {
+				$('.sso_dialog').remove();
+				$('.login_layer').remove();
+			}
+			$(document).on('click', '.sso_dialog_close', function(){
+				closeLogin();
+			});
+			$(document).on('click', '.loginf', function(){
+				var s = '';
+				s += '<div class="login_layer"></div>';
+				s += '<div class="sso_dialog">';
+				s += '<div class="sso_dialog_header">';
+				s += '<div class="hint">您需要登录才能继续操作 !</div>';
+				s += '<button class="sso_dialog_close">×</button></div>';
+				s += '<div class="sso_dialog_content">';
+				s += '<iframe sandbox="allow-same-origin allow-scripts allow-top-navigation allow-forms allow-downloads" frameborder="0" name="loginIframe" scrolling="no" src="http://bbs.eeworld.com.cn/member.php?mod=logging&action=login&from=iframe"></iframe>';
+				s += '</div></div>';
+				$('body').append(s);
+			});
+		});
+	})(jQuery);	
+}
+

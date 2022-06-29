@@ -1,0 +1,82 @@
+Collated Components:,,,,,,
+,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Purchase Link
+1,1,BLUE1,b,0Engrid_Lib:D,Diode_SMD:D_0603_1608Metric,"【淘宝】https://m.tb.cn/h.fqxxFYG?tk=WOvq27x3MyD「贴片LED 0402 0603 0805 1206红黄蓝绿白色灯 高亮发光二极管灯珠」
+点击链接直接打开"
+2,4,"C1, C2, C13, C18",105,Device:C,Capacitor_SMD:C_0805_2012Metric,"【淘宝】https://m.tb.cn/h.fpyvuxc?tk=f7e427x4MHU「0805贴片电容器包1pF-1nf-100nf/104/0.1uf-1uf-1uF 31种值各20个」
+点击链接直接打开"
+3,5,"C3, C4, C6, C11, C12",104,Device:C,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,"【淘宝】https://m.tb.cn/h.fpyvuxc?tk=f7e427x4MHU「0805贴片电容器包1pF-1nf-100nf/104/0.1uf-1uf-1uF 31种值各20个」
+点击链接直接打开"
+4,2,"C5, C14",103,Device:C,Capacitor_SMD:C_0603_1608Metric,"【淘宝】https://m.tb.cn/h.fpyvuxc?tk=f7e427x4MHU「0805贴片电容器包1pF-1nf-100nf/104/0.1uf-1uf-1uF 31种值各20个」
+点击链接直接打开"
+5,2,"C7, C8",22PF,Device:C,Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder,"【淘宝】https://m.tb.cn/h.fpyvuxc?tk=f7e427x4MHU「0805贴片电容器包1pF-1nf-100nf/104/0.1uf-1uf-1uF 31种值各20个」
+点击链接直接打开"
+6,2,"C9, C10",10PF,Device:C,Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder,"【淘宝】https://m.tb.cn/h.fpyvuxc?tk=f7e427x4MHU「0805贴片电容器包1pF-1nf-100nf/104/0.1uf-1uf-1uF 31种值各20个」
+点击链接直接打开"
+7,1,C15,470uF,Device:CP1,Capacitor_SMD:C_Elec_8x10.2,"【淘宝】https://m.tb.cn/h.fpB4RST?tk=dGKh27xtbSN「Risym 电解电容16V/470uF 体积8*12mm直插优质铝电解电容器 50只」
+点击链接直接打开"
+8,2,"C16, C17",106,Device:C,Capacitor_SMD:C_0805_2012Metric,"【淘宝】https://m.tb.cn/h.fri8wM2?tk=t1Tk2iPyhlQ「贴片电容0805 10UF 22UF 10% 20% 6.3V10V16V25V50V 106 226 K M」
+点击链接直接打开"
+9,1,C19,102,Device:C,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,"【淘宝】https://m.tb.cn/h.fpyvuxc?tk=f7e427x4MHU「0805贴片电容器包1pF-1nf-100nf/104/0.1uf-1uf-1uF 31种值各20个」
+点击链接直接打开"
+10,1,D1,P6SMB6.8CA,Device:D_TVS,Diode_SMD:D_SMB,"【淘宝】https://m.tb.cn/h.fJzTyUR?tk=YV1227C0gmM「双向 TVS瞬变抑制二极管 单向 SMBJ6.8CA/P6SMB6.8CA 15A 40A 5AC」
+点击链接直接打开"
+11,1,F1,Fuse,Device:Fuse,0Engrid:Fuse_L8.50mm_W4.00mm_P5.00mm,
+12,1,GREEN1,g,0Engrid_Lib:D,Diode_SMD:D_0603_1608Metric,"【淘宝】https://m.tb.cn/h.fqxxFYG?tk=WOvq27x3MyD「贴片LED 0402 0603 0805 1206红黄蓝绿白色灯 高亮发光二极管灯珠」
+点击链接直接打开"
+13,1,J1,MHDR2X4,0Engrid_Lib:MHDR2X4,Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical,"【淘宝】https://m.tb.cn/h.fJSyZnD?tk=Vk0L2ilpmKy「?排针2.54mm双排针2*2/3/4/5/6/7/8/10/15/20-40P直针插针连接器」
+点击链接直接打开"
+14,4,"J2, J15, J16, J17",SW_Push,0Engrid_Lib:SW_Push,Button_Switch_THT:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W7.62mm_P2.54mm_LowProfile,"【淘宝】https://m.tb.cn/h.friKdGa?tk=hUnw2ilf8BC「轻触开关 贴片按键微动开关3*4*2/3*6*5/3x6x4.3/6*6*3.1 直插2脚」
+点击链接直接打开"
+15,7,"J3, J7, J8, J9, J10, J11, J12",5.0mm,0Engrid_Lib:5.0mm,TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm,"【淘宝】https://m.tb.cn/h.frimWC7?tk=SB3R2ilc7Sc「KF127-2P/3P 接线端子 5.0mm 接线柱 绿色 可拼接 10A/300V」
+点击链接直接打开"
+16,1,J4,5_3.3V,0Engrid_Lib:5_3.3V,Package_TO_SOT_SMD:SOT-223,
+17,1,J5,Power_DC,Connector:Barrel_Jack_Switch,Connector_BarrelJack:BarrelJack_Horizontal,"【淘宝】https://m.tb.cn/h.fnx0iFr?tk=VG5o2gd0KDv「MPD EJ508B CONN PWR JACK 2.5X5.5MM SOLDER 直流电源接口插孔」
+点击链接直接打开"
+18,1,J6,Header_4,0Engrid_Lib:Header_4,Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical,"【淘宝】https://m.tb.cn/h.fJSyZnD?tk=Vk0L2ilpmKy「?排针2.54mm双排针2*2/3/4/5/6/7/8/10/15/20-40P直针插针连接器」
+点击链接直接打开"
+19,1,J13,5.0mm*2,0Engrid_Lib:5.0mm*2,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,"【淘宝】https://m.tb.cn/h.fJSyZnD?tk=Vk0L2ilpmKy「?排针2.54mm双排针2*2/3/4/5/6/7/8/10/15/20-40P直针插针连接器」
+点击链接直接打开"
+20,1,J14,5.0mm*3,0Engrid_Lib:5.0mm*3,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,"【淘宝】https://m.tb.cn/h.fJSyZnD?tk=Vk0L2ilpmKy「?排针2.54mm双排针2*2/3/4/5/6/7/8/10/15/20-40P直针插针连接器」
+点击链接直接打开"
+21,1,LD1,LES,0Engrid_Lib:LES,Diode_SMD:D_SMA,"【淘宝】https://m.tb.cn/h.fKii9SE?tk=stwj2ilrDY1「0603/0805红外发射管 940nm光敏接收管对管光电二极管 贴片式」
+点击链接直接打开"
+22,8,"Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8",Q_NMOS_GSD,Device:Q_NMOS_GSD,0Engrid:SOT23-3,"【淘宝】https://m.tb.cn/h.fq734k0?tk=RgyE2ilIQQu「MOS场效应管AO3400 AO3401/2N7002/SI2301DS 三极管 MOSFET SOT23」
+点击链接直接打开"
+23,1,R1,10K,Device:R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,"【淘宝】https://m.tb.cn/h.fJ7b4M7?tk=27c82ilGGvO「贴片电阻本电容本0201 0402 0603 0805 1206电容电阻包元件样品册」
+点击链接直接打开"
+24,1,R2,47,Device:R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,"【淘宝】https://m.tb.cn/h.fJ7b4M7?tk=27c82ilGGvO「贴片电阻本电容本0201 0402 0603 0805 1206电容电阻包元件样品册」
+点击链接直接打开"
+25,1,R3,1M,Device:R,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,"【淘宝】https://m.tb.cn/h.fJ7b4M7?tk=27c82ilGGvO「贴片电阻本电容本0201 0402 0603 0805 1206电容电阻包元件样品册」
+点击链接直接打开"
+26,1,R4,1K,Device:R,Resistor_SMD:R_0603_1608Metric,"【淘宝】https://m.tb.cn/h.fJ7b4M7?tk=27c82ilGGvO「贴片电阻本电容本0201 0402 0603 0805 1206电容电阻包元件样品册」
+点击链接直接打开"
+27,2,"R5, R6",430,Device:R,Resistor_SMD:R_0603_1608Metric,"【淘宝】https://m.tb.cn/h.fJ7b4M7?tk=27c82ilGGvO「贴片电阻本电容本0201 0402 0603 0805 1206电容电阻包元件样品册」
+点击链接直接打开"
+28,8,"R7, R8, R9, R10, R11, R12, R13, R14",150,Device:R,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,"【淘宝】https://m.tb.cn/h.fJ7b4M7?tk=27c82ilGGvO「贴片电阻本电容本0201 0402 0603 0805 1206电容电阻包元件样品册」
+点击链接直接打开"
+29,8,"R15, R16, R17, R18, R19, R20, R21, R22",10K,Device:R,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,"【淘宝】https://m.tb.cn/h.fJ7b4M7?tk=27c82ilGGvO「贴片电阻本电容本0201 0402 0603 0805 1206电容电阻包元件样品册」
+点击链接直接打开"
+30,5,"R23, R24, R25, R28, R29",4.7K,Device:R,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,"【淘宝】https://m.tb.cn/h.fJ7b4M7?tk=27c82ilGGvO「贴片电阻本电容本0201 0402 0603 0805 1206电容电阻包元件样品册」
+点击链接直接打开"
+31,1,R26,1K,Device:R,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,"【淘宝】https://m.tb.cn/h.fJ7b4M7?tk=27c82ilGGvO「贴片电阻本电容本0201 0402 0603 0805 1206电容电阻包元件样品册」
+点击链接直接打开"
+32,1,R27,47K,Device:R,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,"【淘宝】https://m.tb.cn/h.fJ7b4M7?tk=27c82ilGGvO「贴片电阻本电容本0201 0402 0603 0805 1206电容电阻包元件样品册」
+点击链接直接打开"
+33,1,RED1,r,0Engrid_Lib:D,Diode_SMD:D_0603_1608Metric,"【淘宝】https://m.tb.cn/h.fqxxFYG?tk=WOvq27x3MyD「贴片LED 0402 0603 0805 1206红黄蓝绿白色灯 高亮发光二极管灯珠」
+点击链接直接打开"
+34,1,SS1,D2,0Engrid_Lib:D,Diode_SMD:D_SMA,"【淘宝】https://m.tb.cn/h.fqCOZbp?tk=ebZP27xB53j「SS14 SS34 SS310 贴片肖特基二极管 SMA/SMB 1A 3A/40V (40只)」
+点击链接直接打开"
+35,1,SW1,SW_DPST_x2,Switch:SW_DPST_x2,Button_Switch_THT:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W7.62mm_P2.54mm_LowProfile,"【淘宝】https://m.tb.cn/h.friKdGa?tk=hUnw2ilf8BC「轻触开关 贴片按键微动开关3*4*2/3*6*5/3x6x4.3/6*6*3.1 直插2脚」
+点击链接直接打开"
+36,1,U1,STM32F103C8T6,MCU_ST_STM32F1:STM32F103C8T6,Package_QFP:LQFP-48_7x7mm_P0.5mm,"【淘宝】https://m.tb.cn/h.friBcEF?tk=fFld2ilMU3D「原装正品STM32F103C8T6 LQFP-48 ARM Cortex-M3 32位微控制器-MCU」
+点击链接直接打开"
+37,1,U2,AT24C08,0Engrid_Lib:AT24C08,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,"【淘宝】https://m.tb.cn/h.fKilHo8?tk=PlOL2ilEUjf「【10只】YD- AT24C02/AT24C04/AT24C08/AT24C16/AT24C01 DIP8」
+点击链接直接打开"
+38,1,Y1,8M,Device:Crystal,Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm,"【淘宝】https://m.tb.cn/h.frRdBVo?tk=ada22ilwh4x「贴片晶振8M 49SMD 无源晶振 8MHz 11.0592 12 16 20石英钟振晶体」
+点击链接直接打开"
+39,1,Y2,32.768KHz,Device:Crystal,Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering,"【淘宝】https://m.tb.cn/h.frRWONb?tk=QxZh2ilxSAE「贴片晶振 32.768KHZ 3215 FC-135 3.2*1.5mSMD石英晶体无源晶振」
+点击链接直接打开"
+,1,bluetooth,,,,"【淘宝】https://m.tb.cn/h.fKikCbS?tk=GKUk2iluIbe「带底板HC-05主从机一体蓝牙模块 无线串口透传通讯 HC-05蓝牙模块」
+点击链接直接打开【淘宝】https://m.tb.cn/h.fKikCbS?tk=GKUk2iluIbe「带底板HC-05主从机一体蓝牙模块 无线串口透传通讯 HC-05蓝牙模块」
+点击链接直接打开"

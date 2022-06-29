@@ -1,0 +1,89 @@
+if (typeof (show_success) == "undefined") {
+	function show_success(message) {
+		message = message == '' ? update_date_success : message;
+		if (grefer) {
+			showDialog(message, 'right', reminder, function () {
+				top.window.location.href = '/my/home.php?mod=space&do=pm';
+			}, 1, null, '', '', '', '', 3);
+		} else {
+			showDialog(message, 'right', reminder, function () {
+				top.window.location.href = '/my/home.php?mod=space&do=pm';
+			}, 1, null, '', '', '', '');
+		}
+	}
+}
+
+if (typeof (show_error) == "undefined") {
+	function show_error(message) {
+		showError(message);
+	}
+}
+
+if (typeof (show_error2) == "undefined") {
+	function show_error2(message) {
+		showError(message);
+	}
+}
+
+if (typeof (show_error3) == "undefined") {
+	function show_error3(message) {
+		message = message == '' ? update_date_success : message;
+		if (grefer) {
+			showDialog(message, 'right', reminder, function () {
+				top.window.location.href = '/my/home.php?mod=space&do=pm';
+			}, 1, null, '', '', '', '', 3);
+		} else {
+			showDialog(message, 'right', reminder, function () {
+				top.window.location.href = '/my/home.php?mod=space&do=pm';
+			}, 1, null, '', '', '', '');
+		}
+	}
+}
+
+(function ($) {
+	var adv_obj = $(".eeworldadvs");
+	adv_obj.each(function () {
+		var advid = $(this).attr('data');
+		$(this).find("a").click(function () {
+			$.post("http://www.eeworld.com.cn/advmanagez/advstat.php", {
+				sid: advid
+			});
+		});
+	});
+
+
+	$(".select").each(function(){
+		var s=$(this);
+		var z=parseInt(s.css("z-index"));
+		var dt=$(this).children("dt");
+		var dd=$(this).children("dd");
+		var _show=function(){dd.slideDown(200);dt.addClass("cur");s.css("z-index",z+1);};   //展开效果
+		var _hide=function(){dd.slideUp(200);dt.removeClass("cur");s.css("z-index",z);};    //关闭效果
+		dt.click(function(){dd.is(":hidden")?_show():_hide();});
+		dd.find("a").click(function(){dt.html($(this).html());_hide();$("#channel").val($(this).data('channel'));});     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
+		$("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hide():"";});
+	});
+	
+	
+	$('#switch_thread').click(function(){
+		if($(".first_box").is(":hidden")){
+			$('#switch_thread').html('最新发表');
+			$(".first_box").show();
+			$(".second_box").hide();
+			
+			$('#fd_page_top').show();
+			$('#fd_page_bottom').show();
+		}else{
+			$('#switch_thread').html('最新回复');
+			$(".first_box").hide();
+			$(".second_box").show();
+			
+			$('#fd_page_top').hide();
+			$('#fd_page_bottom').hide();
+		}
+		
+	});
+
+})(jQuery)
+
+

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom|center|top" >
+
+        <TextView
+            android:id="@+id/sample01"
+            android:layout_width="0dip"
+            android:layout_height="80dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="相似色一" />
+
+        <TextView
+            android:id="@+id/sample02"
+            android:layout_width="0dip"
+            android:layout_height="80dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="相似色二" />
+
+        <TextView
+            android:id="@+id/sample03"
+            android:layout_width="0dip"
+            android:layout_height="80dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="相似色三" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewPickedColor"
+        android:layout_width="match_parent"
+        android:layout_height="25dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@color/antiquewhite" />
+
+    <TextView
+        android:id="@+id/textColorinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewPickedColor"
+        android:text="颜色信息"
+        android:textColor="@color/black" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_alignLeft="@+id/textColorinfo"
+        android:layout_below="@+id/textColorinfo"
+        android:background="@color/darkgrey" />
+
+    <View
+        android:id="@+id/viewPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextRGB"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textColorinfo"
+        android:background="@drawable/bg01" />
+
+    <Button
+        android:id="@+id/btnRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:text="重置" />
+
+    <TextView
+        android:id="@+id/textColorDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:gravity="center"
+        android:text="差异值"        
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextRGB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRest"
+        android:layout_centerHorizontal="true"
+        android:ems="9"
+        android:gravity="center" 
+        android:text="RGB数值"        
+        android:inputType="textPersonName" >
+		
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/photo_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editTextRGB"
+        android:text="相册" />
+
+    <Button
+        android:id="@+id/btnSTEMODE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextRGB"
+        android:text="模式" />
+
+    <Button
+        android:id="@+id/btnSETDATA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="设置" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextRGB"
+        android:layout_alignParentBottom="true"
+        android:text="拍照" />
+
+    <TextView
+        android:id="@+id/tV_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextRGB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/editTextRGB"
+        android:layout_toLeftOf="@+id/editTextRGB"
+        android:gravity="center"
+        android:text="蓝牙" />
+
+    <Button
+        android:id="@+id/bt_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextRGB"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/editTextRGB"
+        android:text="连接" />
+
+</RelativeLayout>

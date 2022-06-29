@@ -1,0 +1,253 @@
+var ew_rp_var = false;
+if(typeof(eeworld_tj) != "undefined"){
+    ew_rp_var = true;
+}
+var eeworld_tj = new function(){
+	var LO = location,D = document,SC = screen,W = window,DT = new Date(),M   = Math;DTL = D.title;
+    var __sid,L;
+    L = "https:" == D.location.protocol ? "https:": "http:";
+    var  Aa = function(){
+        this.h  =  LO.hostname;
+        this.rh = function(){
+            var d_a = this.h.split(".");
+            var rh;
+            if(d_a.length>2){
+                rh = d_a[d_a.length-2]+'.'+d_a[d_a.length-1]
+                if(rh=='com.cn'){
+                    rh =  d_a[d_a.length-3]+'.'+d_a[d_a.length-2]+'.'+d_a[d_a.length-1]
+                }    
+            }else{
+                rh = this.h;
+            }
+            return  rh;
+        }
+    }
+	function gettopurl(){
+		var url = "";
+		try{
+			url = encodeURIComponent(top.document.url);
+		}catch(e){}
+		return url;
+	}
+    var aa= new Aa();
+    var Ba = function(){
+        this.width  = SC.width;
+        this.height = SC.height;
+    }
+    var Ca = function(){
+        this.agent = encodeURIComponent(W.navigator.userAgent);
+        this.refer = encodeURIComponent(D.referrer);
+        this.url = encodeURIComponent(D.URL);
+		this.ck = W.navigator.cookieEnabled;
+        this.title = D.title;
+        this.cookie = D.cookie;
+		this.snSize = screen.availWidth+'*'+screen.availHeight;
+		this.htmlSize = parseInt(D.body.clientWidth)+'*'+parseInt(D.body.clientHeight);
+		this.is_top = istop();
+		this.turl = gettopurl();
+    }
+    var Da = function(){
+        this.time = DT.getTime();
+    }
+    var da = new Da();
+    var ba = new Ba();
+    var ca = new Ca();
+    __sid =da.time.toString()+M.round(M.random()*256984).toString();
+    var Ea = function(){
+        this.gce = function(c_name){
+            if(D.cookie.length>0){
+                c_start = D.cookie.indexOf(c_name + "=");
+                if(c_start!=-1){
+                    c_start = c_start + c_name.length +1 ;
+                    c_end = D.cookie.indexOf(';',c_start);
+                    if(c_end==-1)c_end = D.cookie.length;
+                    return unescape(D.cookie.substring(c_start,c_end));
+                }
+            }
+            return '';
+        }
+        this.sce = function(c_name,value,exp){
+            DT.setDate(DT.getDate()+exp);
+            D.cookie = c_name+ "=" +escape(value)+((exp==null)?"":";expires="+DT.toGMTString())+";path=/;domain="+aa.rh();
+        }
+        this.cce = function(){
+            if(this.gce('__fansid')==""){
+                this.sce('__fansid',__sid,365*10);
+            }else{
+                __sid=this.gce("__fansid");
+            }
+            this.sce("__fanvt",DT.getTime());
+        }
+        this.gt = (this.gce('__fanvt'))?DT.getTime()-this.gce('__fanvt'):0;
+    }
+	
+	function istop(){
+		return window.frames.length != parent.frames.length;
+	}
+	if(istop()||document.domain.indexOf("eeworld.com.cn")<0){
+		ew_rp_var = true;
+	}
+	function eduajax(){
+	  var ajaxData = { 
+		type:arguments[0].type || "GET", 
+		url:arguments[0].url || "", 
+		async:arguments[0].async || "true", 
+		data:arguments[0].data || null, 
+		dataType:arguments[0].dataType || "text", 
+		contentType:arguments[0].contentType || "application/x-www-form-urlencoded", 
+		beforeSend:arguments[0].beforeSend || function(){}, 
+		success:arguments[0].success || function(){}, 
+		error:arguments[0].error || function(){} 
+	  } 
+	  ajaxData.beforeSend() 
+	  var xhr = createxmlHttpRequest();  
+	  xhr.responseType=ajaxData.dataType; 
+	  xhr.open(ajaxData.type,ajaxData.url,ajaxData.async);  
+	  xhr.setRequestHeader("Content-Type",ajaxData.contentType);  
+	  xhr.send(convertData(ajaxData.data));  
+	  xhr.onreadystatechange = function() {  
+		if (xhr.readyState == 4) {  
+		  if(xhr.status == 200){ 
+			ajaxData.success(xhr.response) 
+		  }else{ 
+			ajaxData.error() 
+		  }  
+		} 
+	  }  
+	} 
+	  
+	function createxmlHttpRequest() {  
+	  if (window.ActiveXObject) {  
+		return new ActiveXObject("Microsoft.XMLHTTP");  
+	  } else if (window.XMLHttpRequest) {  
+		return new XMLHttpRequest();  
+	  }  
+	} 
+	  
+	function convertData(data){ 
+	  if( typeof data === 'object' ){ 
+		var convertResult = "" ;  
+		for(var c in data){  
+		  convertResult+= c + "=" + data[c] + "&";  
+		}  
+		convertResult=convertResult.substring(0,convertResult.length-1) 
+		return convertResult; 
+	  }else{ 
+		return data; 
+	  } 
+	}
+    
+
+	function bin2hex(s){
+	  var i, l, o = '',n;
+	  s += '';
+	  for (i = 0, l = s.length; i < l; i++) {
+		n = s.charCodeAt(i)
+		  .toString(16);
+		o += n.length < 2 ? '0' + n : n;
+	  }
+	  return o;
+	}
+	
+    var ea = new Ea();
+    ea.cce();
+	var uid = ea.gce('eew_uid');
+    function Fa(){
+        var im = new Image();
+        var a=[];
+		var pg = 0;
+		if(typeof navigator.languages!='undefined'){
+			pg = navigator.languages.length;
+		}
+		a.push('p='+ew_rp_var);
+		a.push('id=70');
+        a.push('s='+aa.h);
+        a.push('sid='+__sid);
+        a.push('at='+ca.agent);
+		a.push('hs='+ca.htmlSize);
+		a.push('ss='+ca.snSize);
+		a.push('ck='+ca.ck);
+        a.push('w='+ba.width);
+        a.push('h='+ba.height);
+        a.push('re='+ca.refer);
+		a.push('istop='+ca.is_top);
+		a.push('uid='+uid);
+		a.push('pg='+pg);
+        a.push('url='+ca.url);
+		a.push('t='+ea.gt);
+		a.push('tu='+ca.turl);
+        if(aa.h=='bbs.eeworld.com.cn'&&typeof(fid)!='undefined'){
+            a.push('fid='+fid);
+        }
+        this.src = L+'//counter.eeworld.com.cn/tj.gif?'+a.join('&');
+        im.src = this.src;
+    }
+	
+	if(aa.h.indexOf("eeworld.com")>=0){
+		Fa(); 
+	    
+		if(!ew_rp_var){
+			 
+			if(aa.h=='bbs.eeworld.com.cn'&&ca.url.indexOf("thread")>=0||aa.h=='m.eeworld.com.cn'&&ca.url.indexOf("bbs_thread")>=0){
+				if(typeof(jQuery) != "undefined"){
+					(function($){
+						$(function(){
+							$(".message_area a,.postListItem a").click(function(){
+								var urls = $(this).attr('href');
+								var cur_url = location.href;
+								if(urls.indexOf("kkkkkkkkkkkkkk")<0){
+									$.get('http://bbs.eeworld.com.cn/adsclick',{tid:tid,url:encodeURIComponent(urls),fromurl:encodeURIComponent(cur_url)});
+								}
+							});
+						});
+					})(jQuery);
+				}
+			}
+			
+			(function(){
+			var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+			document.write('<script src="' + src + '" id="sozz"><\/script>');
+			})();
+			(function(){
+				var bp = document.createElement('script');
+				bp.type = 'text/javascript';
+				bp.async = true;
+				var curProtocol = window.location.protocol.split(':')[0];
+				if (curProtocol === 'https') {
+					bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+				}
+				else {
+					bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+				}
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(bp, s);
+			})();
+		}
+		
+		//sensors
+		if(typeof(sensors) != "undefined"){
+			sensors.quick('isReady', function(){
+				var w_uid = uid;
+				var anonymous_id = sensors.store.getDistinctId();
+				if(anonymous_id== '0'){
+					sensors.logout();
+				}
+				var reg_int = /^\d+$/;
+				w_uid = parseInt(w_uid);
+				if(anonymous_id== '0' || !reg_int.test(anonymous_id)){
+					 if(w_uid>0){
+						 sensors.login(w_uid);
+					 }
+				}
+			});
+		}
+       
+
+		
+	}
+	
+	
+
+};
+
+

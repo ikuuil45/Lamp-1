@@ -1,0 +1,8 @@
+.login_layer {width: 100%;z-index: 1000000000;background: #000;filter: alpha(opacity=50);-moz-opacity: .5;-khtml-opacity: .5;opacity: .5;left: 0;top: 0;position: fixed;height: 100%;}
+.sso_dialog {top: 50%;left: 50%;margin-left: -250px;margin-top: -305px;border: none;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;background: #fff;z-index: 1000000000000;position: fixed;display: block;width: 500px;}
+.sso_dialog_content iframe {display: block;width: 100%;border: none;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;min-height:546px;}
+.sso_dialog_content {display: block;width: 500px;background: url('/static/login/img/load_ajax.gif') center center no-repeat;}
+.sso_dialog_close,
+.sso_dialog_close:active {display: block;border: none;height: 30px;line-height: 30px;font-size: 28px;top: 0;right: 5px;padding: 0;margin: 0;outline: 0;background: 0 0;position: absolute;color: #999;width: 30px;cursor: pointer;}
+.sso_dialog_header {display: block;color: #555;font-size: 20px;height: 30px;padding: 0 15px;}
+.hint {color: #ef0012;font-size: 14px;position: absolute;top: 14px;}
